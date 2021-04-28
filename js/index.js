@@ -158,24 +158,19 @@ for (let i = 0; i <= 100; i++) {
 }
 console.log(thirdTaskCounter);
 /* 4********************************* */
-let fourthTaskFlag = false;
-while (!fourthTaskFlag) {
-  if (prompt("2 + 2 * 2 = ") == 6) {
-    fourthTaskFlag = true;
-    alert("Сongratulations!");
-  }
+let fourthTaskValue;
+while (fourthTaskValue !== 6) {
+  fourthTaskValue = Number(prompt("2 + 2 * 2 = "));
 }
-fourthTaskFlag = false;
-do {
-  if (prompt("2 + 2 * 2 = ") == 6) {
-    fourthTaskFlag = true;
-    alert("Сongratulations!");
-  }
-} while (!fourthTaskFlag);
+alert("Сongratulations!");
 
-for (let i = false; !i; ) {
-  if (prompt("2 + 2 * 2 = ") == 6) {
-    i = true;
-    alert("Сongratulations!");
-  }
+fourthTaskValue = 0;
+do {
+  fourthTaskValue = Number(prompt("2 + 2 * 2 = "));
+} while (fourthTaskValue !== 6);
+alert("Сongratulations!");
+
+for (let i; i !== 6; ) {
+  i = Number(prompt("2 + 2 * 2 = "));
 }
+alert("Сongratulations!");
