@@ -63,7 +63,7 @@ alert(greeting + userName + "! Welcome to JS-intro!");
 /*Таски на условия:*/
 /* 1********************************* */
 const guessNumber = Number(prompt("Guess the number:"));
-if (guessNumber == 10) {
+if (guessNumber === 10) {
   alert("Lucky you, its rly 10!");
 } else {
   alert("Wasted");
@@ -116,7 +116,7 @@ for (let i = 25; i >= 0; i--) {
 /* 2********************************* */
 let secondTaskCounter = 10;
 while (secondTaskCounter <= 50) {
-  if (secondTaskCounter % 5 == 0) {
+  if (secondTaskCounter % 5 === 0) {
     console.log(secondTaskCounter);
   }
   secondTaskCounter++;
@@ -124,14 +124,14 @@ while (secondTaskCounter <= 50) {
 
 secondTaskCounter = 10;
 do {
-  if (secondTaskCounter % 5 == 0) {
+  if (secondTaskCounter % 5 === 0) {
     console.log(secondTaskCounter);
   }
   secondTaskCounter++;
 } while (secondTaskCounter <= 50);
 
 for (let i = 10; i <= 50; i++) {
-  if (i % 5 == 0) {
+  if (i % 5 === 0) {
     console.log(i);
   }
 }
