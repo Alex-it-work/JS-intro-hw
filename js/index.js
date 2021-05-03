@@ -85,12 +85,12 @@ const price = Number(prompt("Enter amount:"));
 if (price > 800) {
   alert(
     "Your purchase amount with 5% discount is : " +
-      Math.ceil((price * 0.95 * 100) / 100)
+      Math.ceil(price * 0.95 * 100) / 100
   );
 } else if (price > 500) {
   alert(
     "Your purchase amount with 3% discount is : " +
-      Math.ceil((price * 0.97 * 100) / 100)
+      Math.ceil(price * 0.97 * 100) / 100
   );
 } else {
   alert("Your purchase amount is : " + price);
