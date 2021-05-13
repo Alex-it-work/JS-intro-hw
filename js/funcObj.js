@@ -251,12 +251,30 @@
 //   "12345"
 // );
 // console.log("militaryArt :>> ", militaryArt);
+// /**
+//  *
+//  * @param {string} author
+//  * @param {string} name
+//  * @param {string} year
+//  * @param {string} publishing
+//  * @constructor object
+//  */
 // function PBook(author, name, year, publishing) {
 //   this.author = author;
 //   this.name = name;
 //   this.year = year;
 //   this.publishing = publishing;
 // }
+// /**
+//  *
+//  * @param {string} author
+//  * @param {string} name
+//  * @param {string} year
+//  * @param {string} publishing
+//  * @param {string} format
+//  * @param {string} eNumber
+//  * @constructor object
+//  */
 // function EBook(author, name, year, publishing, format, eNumber) {
 //   this.author = author;
 //   this.name = name;
