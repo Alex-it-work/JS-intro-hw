@@ -5,21 +5,20 @@
 // const dividers = [5, 3, 2];
 // for (let i = 0; i < 3; i++) {
 //   if (randomNumber % dividers[i] === 0) {
-//     console.log(randomNumber + " is divided by " + dividers[i]);
+//     console.log(`${randomNumber} is divided by ${dividers[i]}`);
 //   } else {
-//     console.log(randomNumber + " is NOT divided by " + dividers[i]);
+//     console.log(`${randomNumber} is NOT divided by ${dividers[i]}`);
 //   }
 // }
-
 // Таски на циклы (Only FOR)
 // 1) Вывести факториал запрошенного числа. (5!=1*2*3*4*5)
 
-// const userNumber = Number(prompt("Enter some number pls "));
+// const userNumber = Number(prompt("Enter some number pls ", "any number"));
 // let factorialRez = 1;
 // for (let i = 1; i <= userNumber; i++) {
 //   factorialRez *= i;
 // }
-// alert(userNumber + "! = " + factorialRez);
+// alert(`${userNumber}! = ${factorialRez}`);
 
 // Неудачное решение..... цикл, при каждой итерации обращается к константе которая задана функцией, которая, в итоге, заново пытается определить константу каждый раз......... ИСПРАВИЛ,Исправил, оставлю как второй вариант решения ....
 
@@ -31,7 +30,7 @@
 // function checkUserNumber() {
 //   let userNumber;
 //   for (;;) {
-//     userNumber = Number(prompt("Enter some number pls "));
+//     userNumber = Number(prompt("Enter some number pls ", "any number"));
 //     if (Number.isInteger(userNumber)) {
 //       break;
 //     } else {
@@ -44,7 +43,7 @@
 // for (let i = 1; i <= userNumber; i++) {
 //   factorialRez *= i;
 // }
-// alert(userNumber + "! = " + factorialRez);
+// alert(`${userNumber}! = ${factorialRez}`);
 
 // 2) *вычислить сумму первых N элементов последовательности 1 + 1/2 + 1/3 + ...+ 1/N . параметр N задает пользователь
 
@@ -169,11 +168,14 @@
 
 // 4) Написать функции расчета площадей (поверхности) следующих фигур/тел: треугольника, прямоугольника (конуса, параллелепипеда)
 // (2 функции на выбор реализовать в формате функционального выражения)
+
+// const numRand = () => Math.floor(Math.random() * 100);
 // const areaCone = calcAreaCone(numRand(), numRand());
 // const areaParallelepiped = calcAreaParallelepiped(
 //   numRand(),
 //   numRand(),
 //   numRand()
+//   //редактор кода автоматом убирает крайнюю запятую
 // );
 // console.log("Cone Area is " + areaCone);
 // console.log("Parallelepiped Area is " + areaParallelepiped);
@@ -195,9 +197,6 @@
 //  */
 // function calcAreaParallelepiped(edge1, edge2, edge3) {
 //   return 2 * (edge1 * edge2 + edge2 * edge3 + edge1 * edge3);
-// }
-// function numRand() {
-//   return Math.floor(Math.random() * 100);
 // }
 
 // // Таски на объекты
@@ -267,4 +266,4 @@
 //   this.eNumber = eNumber;
 // }
 
-// // НЕ ЗАБЫТЬ ДОБАВИТЬ ПРАВИЛЬНЫЕ КОММЕНТАРИИ К ФУНКЦИЯМ ЧЕРЕЗ /** */
+// // НЕ ЗАБЫТЬ ДОБАВИТЬ ПРАВИЛЬНЫЕ КОММЕНТАРИИ JSDoc К ФУНКЦИЯМ ЧЕРЕЗ /** */
