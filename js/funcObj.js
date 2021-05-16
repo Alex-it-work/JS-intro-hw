@@ -13,37 +13,37 @@
 // Таски на циклы (Only FOR)
 // 1) Вывести факториал запрошенного числа. (5!=1*2*3*4*5)
 
-// const userNumber = Number(prompt("Enter some number pls ", "any number"));
+// const enteredNumber = Number(prompt("Enter some number pls ", "any number"));
 // let factorialRez = 1;
-// for (let i = 1; i <= userNumber; i++) {
+// for (let i = 1; i <= enteredNumber; i++) {
 //   factorialRez *= i;
 // }
-// alert(`${userNumber}! = ${factorialRez}`);
+// alert(`${enteredNumber}! = ${factorialRez}`);
 
 // Неудачное решение..... цикл, при каждой итерации обращается к константе которая задана функцией, которая, в итоге, заново пытается определить константу каждый раз......... ИСПРАВИЛ,Исправил, оставлю как второй вариант решения ....
 
-// const userNumber = checkUserNumber();
+// const enteredNumber = enterUserNumber();
 // /**
 //  *
 //  * @returns number
 //  */
-// function checkUserNumber() {
-//   let userNumber;
+// function enterUserNumber() {
+//   let usersEnteredNumber;
 //   for (;;) {
-//     userNumber = Number(prompt("Enter some number pls ", "any number"));
-//     if (Number.isInteger(userNumber)) {
+//     usersEnteredNumber = Number(prompt("Enter some number pls ", "any number"));
+//     if (Number.isInteger(usersEnteredNumber)) {
 //       break;
 //     } else {
 //       alert("number is not integer");
 //     }
 //   }
-//   return userNumber;
+//   return usersEnteredNumber;
 // }
 // let factorialRez = 1;
-// for (let i = 1; i <= userNumber; i++) {
+// for (let i = 1; i <= enteredNumber; i++) {
 //   factorialRez *= i;
 // }
-// alert(`${userNumber}! = ${factorialRez}`);
+// alert(`${enteredNumber}! = ${factorialRez}`);
 
 // 2) *вычислить сумму первых N элементов последовательности 1 + 1/2 + 1/3 + ...+ 1/N . параметр N задает пользователь
 
@@ -213,23 +213,25 @@
 //   showAddress() {
 //     return this.country + " " + this.district + " " + this.city;
 //   },
-//   changeGender() {
-//     return (this.gender = "male");
+//   changeGender(newGender) {
+//     return (this.gender = newGender);
 //   },
 // };
 // console.log("Address of student ", student.showAddress());
-// console.log("Change gender of student", student.changeGender());
+// student.changeGender(prompt("Enter another gender pls"));
+// console.log("student :>> ", student);
 
 // // 2. создать объект, который содержит свойства, о факультете и кафедре, методы: перевод на другой факультет. (можно на свой выбор)
 
 // const ZPNU = {
 //   faculty: "Engineering and Physics",
 //   department: "Technology and equipment for welding",
-//   changeFaculty() {
-//     return (this.faculty = prompt("Enter another faculty pls"));
+//   changeFaculty(newFaculty) {
+//     return (this.faculty = newFaculty);
 //   },
 // };
-// console.log("ZPNU.changeFaculty() :>> ", ZPNU.changeFaculty());
+// ZPNU.changeFaculty(prompt("Enter another faculty pls"));
+// console.log("ZPNU :>> ", ZPNU);
 
 // // 3 Создать функции-конструкторы:
 // // - Книга (автор, название, год издания, издательство)
@@ -238,7 +240,7 @@
 // const novel = new PBook(
 //   "Ray Bradbury",
 //   "Fahrenheit 451",
-//   "1953",
+//   1953,
 //   "Ballantine Books"
 // );
 // console.log("novel :>> ", novel);
@@ -255,7 +257,7 @@
 //  *
 //  * @param {string} author
 //  * @param {string} name
-//  * @param {string} year
+//  * @param {number} year
 //  * @param {string} publishing
 //  * @constructor object
 //  */
@@ -283,5 +285,3 @@
 //   this.format = format;
 //   this.eNumber = eNumber;
 // }
-
-// // НЕ ЗАБЫТЬ ДОБАВИТЬ ПРАВИЛЬНЫЕ КОММЕНТАРИИ JSDoc К ФУНКЦИЯМ ЧЕРЕЗ /** */
